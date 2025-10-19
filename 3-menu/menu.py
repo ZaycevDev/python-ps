@@ -17,6 +17,7 @@ elif menu_category == DESSERT:
     dish = input("Выберете десерт (торт, мороженное, фрукты): ").lower()
 else:
     print("Введено неверное блюдо")
+    exit()
 
 match dish:
     case "чай":
@@ -40,4 +41,4 @@ match dish:
     case _:
         price = 0.0
 
-print(price)
+print(f"Цена: {price} руб.")
