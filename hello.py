@@ -1,10 +1,12 @@
-a = float(input("Введите первое число: "))
-b = float(input("Введите второе число: "))
-c = float(input("Введите третье число: "))
+import copy
 
-if a > b and a > c:
-    print(a)
-elif b > a and b > c:
-    print(b)
-else:
-    print(c)
+l = [10, 2, 3, 5, 6, 7]
+first, *middle, last = l
+t = (first + last, sum(middle))
+print(t)
+l.pop()
+l.append("gg")
+l.extend((1, 2))
+print(l)
+l2 = l.copy()
+copy.deepcopy(l)
